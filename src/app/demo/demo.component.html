@@ -1,0 +1,27 @@
+<p>Get Api Demo works!</p>
+
+<table  style="border:2px solid grey;border-spacing:30px">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Status</th>
+    </tr>
+</thead>
+
+    <tbody>
+        <tr *ngFor="let post of posts"
+        class="list-group-item">
+
+            <td>   {{ post.id }} </td>
+            <td>   {{ post.name }} </td>
+            <td>   {{ post.email }} </td>
+            <td>   {{ post.gender }} </td>
+            <td>   {{ post.status }} </td>
+        </tr>
+    </tbody>
+</table>
+
+  
